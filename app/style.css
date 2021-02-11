@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TABLE */
+.table, .footer, .output {
+  text-align: center;
+  width: 100%;
+}
+tr {
+  height: 40px;
+  transition: background 333ms ease-in-out;
+}
+tr:nth-child(even) { background: #e6f0f6; }
+tr:nth-child(odd) { background: #fff; }
+tr:hover { background: #ddd; }
+tr:hover:nth-child(even) { background: #ddd; }
+tr:hover td { color: #888; }
+tr:hover a { color: #666; }
+tr td {
+  width: 200px;
+  color: #888;
+  font-size: 0.78em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}

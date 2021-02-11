@@ -10,6 +10,36 @@
     <title>Home - a docker project</title>
 </head>
 <body>
-    Hello world!
+    <?php
+        include 'functions.php';
+    ?>
+    <div class="container">
+        <h1>Liste des utilisateurs</h1>
+        <table cellspacing="0" class="table">
+            <tbody> 
+            <tr>
+                <td>ID</td>
+                <td>Username</td>
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Password (hashed)</td>
+            </tr> 
+                <?php
+                    $users = SQLRequest("SELECT * from users;", "dockerdb");
+                    foreach($users as $user) {
+                ?>
+                    <tr>
+                        <td><?= $user['id'] ?></td>
+                        <td><?= $user['username'] ?></td>
+                        <td><?= $user['nom'] ?></td>
+                        <td><?= $user['prenom'] ?></td>
+                        <td><?= $user['password'] ?></td>
+                    </tr>
+                <?php
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
