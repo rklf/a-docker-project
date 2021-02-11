@@ -18,11 +18,11 @@
         <table cellspacing="0" class="table">
             <tbody> 
             <tr>
-                <td>ID</td>
-                <td>Username</td>
-                <td>Nom</td>
-                <td>Prénom</td>
-                <td>Password (hashed)</td>
+                <td class="head">ID</td>
+                <td class="head">Username</td>
+                <td class="head">Nom</td>
+                <td class="head">Prénom</td>
+                <td class="head">Password (hashed)</td>
             </tr> 
                 <?php
                     $users = SQLRequest("SELECT * from users;", "dockerdb");
