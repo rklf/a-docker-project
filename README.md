@@ -1,6 +1,6 @@
 # 👏 a docker project
 
-### A simple docker php project which retrieve users from database and display them, also a register page to add an user to database 🤝
+### A simple school docker php project which retrieve users from database and display them, also a register page to add an user to database 🤝
 
 
 ## 📖 Usage:
